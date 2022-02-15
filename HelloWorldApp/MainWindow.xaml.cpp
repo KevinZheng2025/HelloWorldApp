@@ -30,5 +30,6 @@ namespace winrt::HelloWorldApp::implementation
     void MainWindow::myButton_Click(IInspectable const&, RoutedEventArgs const&)
     {
         myButton().Content(box_value(L"Clicked"));
+        myLabel().Text(L"Hello World");
     }
 }
